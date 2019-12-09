@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ByronSilva-examen</string>
+    <string name="usuario">USERNAME</string>
+    <string name="usuariotv">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="passwordtv">PASSWORD</string>
+    <string name="ingresarbt">INGRESAR</string>
+    <string name="logoimg">logo</string>
+    <string name="Nombre">Nombre</string>
+    <string name="tvmini">Monto inicial:</string>
+    <string name="tvpagom">Pago mensual:</string>
+    <string name="btguardar">GUARDAR</string>
+    <string name="preg1">¿Por qué eligió este centro educativo?</string>
+    <string name="preg2">¿Qué deportes practica?</string>
+    <string name="ch1">FUTBOL</string>
+    <string name="ch2">BASKET</string>
+    <string name="ch3">NINGUNO</string>
+    <string name="preg3">Está interesado en aprender otro idioma aparte de inglés.</string>
+    <string name="rv1">SI</string>
+    <string name="rv2">NO</string>
+    <string name="btnContinuar">CONTINUAR</string>
+</resources>

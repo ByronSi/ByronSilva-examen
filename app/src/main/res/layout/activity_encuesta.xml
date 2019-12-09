@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".encuesta">
+
+    <TextView
+        android:id="@+id/tvpreg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="39dp"
+        android:text="@string/preg1"
+        app:layout_constraintBottom_toTopOf="@+id/etPregunta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tvpreg2"
+        app:layout_constraintStart_toStartOf="@+id/tvpreg1"
+        app:layout_constraintTop_toBottomOf="@+id/tvpreg1" />
+
+    <TextView
+        android:id="@+id/tvpreg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="@string/preg2"
+        app:layout_constraintBottom_toTopOf="@+id/chfutbol"
+        app:layout_constraintStart_toStartOf="@+id/etPregunta"
+        app:layout_constraintTop_toBottomOf="@+id/etPregunta" />
+
+    <TextView
+        android:id="@+id/tvPreg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/preg3"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chNinguno" />
+
+    <CheckBox
+        android:id="@+id/chfutbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/ch1"
+        app:layout_constraintBottom_toTopOf="@+id/cbBasket"
+        app:layout_constraintStart_toStartOf="@+id/tvpreg2"
+        app:layout_constraintTop_toBottomOf="@+id/tvpreg2" />
+
+    <CheckBox
+        android:id="@+id/cbBasket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/ch2"
+        app:layout_constraintBottom_toTopOf="@+id/chNinguno"
+        app:layout_constraintStart_toStartOf="@+id/chfutbol"
+        app:layout_constraintTop_toBottomOf="@+id/chfutbol" />
+
+    <CheckBox
+        android:id="@+id/chNinguno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="@string/ch3"
+        app:layout_constraintBottom_toTopOf="@+id/tvPreg3"
+        app:layout_constraintStart_toStartOf="@+id/cbBasket"
+        app:layout_constraintTop_toBottomOf="@+id/cbBasket" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/btContinuar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPreg3">
+
+        <RadioButton
+            android:id="@+id/rbsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rv1" />
+
+        <RadioButton
+            android:id="@+id/rbno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rv2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btContinuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="121dp"
+        android:layout_marginLeft="121dp"
+        android:layout_marginBottom="107dp"
+        android:onClick="guardar"
+        android:text="@string/btnContinuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
